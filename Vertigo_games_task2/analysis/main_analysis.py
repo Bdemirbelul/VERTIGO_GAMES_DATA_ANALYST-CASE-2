@@ -1,5 +1,4 @@
-# Türkçe, hafif samimi ama profesyonel yorumlarla sadeleştirilmiş versiyon
-# Gereksiz yorumlar kaldırıldı, sadece kritik yerlere açıklama eklendi
+
 
 import pandas as pd
 import numpy as np
