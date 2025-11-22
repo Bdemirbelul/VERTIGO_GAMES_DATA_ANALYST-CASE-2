@@ -7,3 +7,11 @@ Bu analizde bana verilen günlük kullanıcı aktivitelerinin yer aldığı data
 Segmentasyonun ardından, oyuncu aktivitesinin zaman içindeki değişimini inceleyebilmek için günlük ve “days-since-install” bazında ortalama oturum süresi eğilimlerine baktım. Bu analizde amaç, oyuncular oyunda daha fazla zaman geçirdikçe oturum sürelerinin uzayıp uzamadığını veya oyundan sıkılıp daha kısa sürelerle oynayıp oynamadıklarını görmekti. Ayrıca retention oranlarını, monetization dağılımını (IAP & Ad Revenue), payer vs non-payer davranış farklarını ve ülke bazlı performansı inceleyerek dataset üzerinde daha geniş kapsamlı bir davranış analizi yaptım.
 
 Son olarak, kullanıcı yaşam döngüsüne (lifecycle) göre session davranışlarını inceledim; böylece yeni oyuncularla uzun süredir oyunda olan oyuncular arasındaki kalıplar ortaya çıkarıldı. Bu analiz, oyunun uzun vadeli bağlılığı nasıl etkilediğini görmeme yardımcı oldu.
+
+
+# Kritik noktalar 
+
+
+1 . Kodun vermiş olduğu default output   analiz summary olarak dosyalandı ve konuldu 
+2.  Tekrardan oluşturulan analiz görselleri output files olarak yüklendi 
+
