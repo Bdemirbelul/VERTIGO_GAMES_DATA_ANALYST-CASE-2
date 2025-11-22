@@ -1,45 +1,9 @@
 # VERTIGO_GAMES_DATA_ANALYST-CASE-2
 
-User Characteristics Analysis - Task 2
 
-This project analyzes user characteristics, segmentations, and trends from in-game and monetization activities.
 
-## Project Structure
+Bu analizde bana verilen günlük kullanıcı aktivitelerinin yer aldığı dataset’i kullanarak oyuncu davranışlarını daha iyi anlamaya çalıştım. İlk olarak, kullanıcıların oyunu yükledikleri ilk gün nasıl davrandıklarını inceleyerek bir “first-day engagement” segmentasyonu oluşturdum. Bunun için oturum sayısı, toplam oyun süresi, maç başlangıcı/bitirimi, kazanma oranı ve ilk gün üretilen gelir gibi metrikleri birleştirip her kullanıcıya ait davranış profilini çıkardım. Ardından bu profilleri K-Means kümeleme yöntemine sokarak kullanıcıları düşük, orta ve yüksek etkileşimli olmak üzere üç ana gruba ayırdım. Bu segmentler, kullanıcıların oyuna ne kadar hızlı adapte olduklarını anlamayı ve yüksek potansiyelli oyuncuları erken aşamada tespit etmeyi sağladı.
 
-```
-Vertigo_games_task2/
-├── data/
-│   ├── raw/              # Original dataset files
-│   └── processed/        # Processed/cleaned data
-├── analysis/
-│   └── main_analysis.py  # Main analysis script
-├── outputs/
-│   ├── figures/          # Generated visualizations
-│   └── reports/          # Analysis reports and summaries
-└── requirements.txt     # Python dependencies
-```
+Segmentasyonun ardından, oyuncu aktivitesinin zaman içindeki değişimini inceleyebilmek için günlük ve “days-since-install” bazında ortalama oturum süresi eğilimlerine baktım. Bu analizde amaç, oyuncular oyunda daha fazla zaman geçirdikçe oturum sürelerinin uzayıp uzamadığını veya oyundan sıkılıp daha kısa sürelerle oynayıp oynamadıklarını görmekti. Ayrıca retention oranlarını, monetization dağılımını (IAP & Ad Revenue), payer vs non-payer davranış farklarını ve ülke bazlı performansı inceleyerek dataset üzerinde daha geniş kapsamlı bir davranış analizi yaptım.
 
-## Setup
-
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-2. Run analysis:
-```bash
-python analysis/main_analysis.py
-```
-
-## Analysis Results
-
-The analysis includes:
-- First-day engagement segmentation
-- Session duration trends over time
-- User retention analysis
-- Monetization patterns
-- Geographic analysis
-- Gameplay behavior analysis
-
-All results are saved in the `outputs/` directory.
-
+Son olarak, kullanıcı yaşam döngüsüne (lifecycle) göre session davranışlarını inceledim; böylece yeni oyuncularla uzun süredir oyunda olan oyuncular arasındaki kalıplar ortaya çıkarıldı. Bu analiz, oyunun uzun vadeli bağlılığı nasıl etkilediğini görmeme yardımcı oldu.
