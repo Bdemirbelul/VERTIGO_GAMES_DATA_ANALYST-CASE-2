@@ -13,5 +13,7 @@ Son olarak, kullanıcı yaşam döngüsüne (lifecycle) göre session davranış
 
 
 1 . Kodun vermiş olduğu default output   analiz summary olarak dosyalandı ve konuldu 
+
+
 2.  Tekrardan oluşturulan analiz görselleri output files olarak yüklendi 
 
